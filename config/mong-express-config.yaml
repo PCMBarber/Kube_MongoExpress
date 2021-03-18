@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: express-config-map
 data:
-  db-pod-name: mongodb
+  db-pod-name: mongodb-service
