@@ -50,17 +50,17 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: minimal-ingress
+  name: express-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /express
         pathType: Prefix
         backend:
           service:
-            name:express-servicetest
+            name: express-servicetest
             port:
               number: 8081
