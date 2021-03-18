@@ -54,8 +54,13 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  defaultBackend:
-    service:
-      name: express-service
-      port:
-        number: 8081
+  rules:
+  - http:
+      paths:
+      - path: /express
+        pathType: Prefix
+        backend:
+          service:
+            name: express-service
+            port:
+              number: 8081
