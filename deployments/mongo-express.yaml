@@ -38,13 +38,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mong-express
+  name: express-service
 spec:
   selector:
     app: mong-express
-  type: LoadBalancer
   ports: 
   - protocol: TCP
     port: 8081
     targetPort: 8081
-    nodePort: 30000
