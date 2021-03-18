@@ -52,7 +52,7 @@ kind: Ingress
 metadata:
   name: express-ingress
   annotations:
-    nginx.ingress.kubernetes.io/ingressClassName: ingress-control
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   defaultBackend:
     service:
