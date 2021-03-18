@@ -32,7 +32,7 @@ spec:
         - name: ME_CONFIG_MONGODB_SERVER
           valueFrom:
             configMapKeyRef:
-              name: mong-express-config
+              name: express-config-map
               key: db-pod-name
 ---
 apiVersion: v1
