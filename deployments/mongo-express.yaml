@@ -51,6 +51,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: express-ingress
+  ingressClassName: ingress-control
 spec:
   defaultBackend:
     service:
