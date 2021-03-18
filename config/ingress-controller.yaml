@@ -4,7 +4,3 @@ metadata:
   name: ingress-control
 spec:
   controller: example.com/ingress-controller
-  parameters:
-    apiGroup: k8s.example.com
-    kind: IngressParameters
-    name: ingress-control
